@@ -16,7 +16,6 @@ def Eunneun_Detaction(k_word):
 
 # Main
 print("\n안녕하세요.\n")
-Eunneun_Detaction("빠")
 while True:
     user_input = input("한식,중식,일식 중 한가지를 골라주세요:")
     if user_input in ("한식","중식","일식"):
@@ -24,7 +23,7 @@ while True:
         print(user_input + "이라면, " + tmp + Eunneun_Detaction(tmp) + " 어떨까요?\n")
         break
     else:
-        print("\n" + user_input + "이라구요？\n죄송합니다. 다시 입력해주세요.\n")
+        print("\n" + user_input + "죄송합니다. 다시 입력해주세요.\n")
 
 # Notes
 # Line 22 if, in 참고 : https://www.daniweb.com/programming/software-development/threads/64456/python-logical-or
